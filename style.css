@@ -1,0 +1,10 @@
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: 335px;
+    border-radius: 5px;
+    border-color: purple;
+    border-style: solid;
+    border-width: 8px;
+    margin-top: 28px;
+}
