@@ -1,4 +1,4 @@
-.grid-container {
+/*.grid {
     display: flex;
     flex-wrap: wrap;
     margin-inline: 335px;
@@ -7,4 +7,146 @@
     border-style: solid;
     border-width: 8px;
     margin-top: 28px;
+}
+
+.square {
+    flex: 1 1 auto;
+    width: 40px;
+    height: 40px;
+    background-color: pink;
+    border: 2px solid black;
+}
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+body {
+    background-color: #78cccb;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    margin-inline: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    border-radius: 35px;
+    background-color: #ff5e5b;
+    width: 460px;
+    padding-inline: 15px;
+    padding-top: 18px;
+}
+
+.title {
+    font-family: "Lobster", sans-serif;
+    font-size: 70px;
+    padding-inline: 30px;
+    color: #ffed66;
+}
+
+.customization-container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.size-container,
+.mode-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.sizes,
+.modes {
+    display: flex;
+    gap: 22px;
+}
+
+.custom-size {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    align-items: start;
+}
+
+.custom-size-container {
+    display: flex;
+    gap: 20px;
+}
+
+input, .custom-size-container>button {
+    font-size: 16px;
+}
+
+input {
+    color: grey;
+    width: 180px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.tools {
+    display: flex;
+    gap: 40px;
+}
+
+.custom-size-container>button {
+    background-color: #ffffea;
+    border: none;
+    border-radius: 4px;
+}
+
+.tools>button,
+.sizes button,
+.modes button {
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 8px 5px 8px;
+    background-color: #ffffea;
+}
+
+.tools>button {
+    width: fit-content;
+    font-weight: bolder;
+    color: #ff5e5b;
+}
+
+.rainbow-button {
+    color: #21a1aa;
+}
+
+.customization-container .text,
+.custom-size label {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffea;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 650px;
+    height: 650px;
+    border-radius: 5px;
+    border-width: 7px;
+    border-color: purple;
+    border-style: solid;
+}
+
+.square {
+    width: 40.625px;
+    height: 40.625px;
+    background-color: pink;
+    border: 1px solid black;
+    box-sizing: border-box;
 }

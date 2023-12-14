@@ -2,15 +2,58 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etch-a-Sketch</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch A Sketch</title>
+    <link rel="stylesheet" href="style.css" />
     <script src="javascript.js" defer></script>
 </head>
 
 <body>
-    <div class="grid-container"></div>
+    <div class="container">
+        <div class="menu">
+            <div class="title">Etch A Sketch</div>
+
+            <div class="customization-container">
+                <div class="size-container">
+                    <div class="text">Grid size:</div>
+
+                    <div class="sizes">
+                        <button>Small</button>
+                        <button>Medium</button>
+                        <button>Big</button>
+                    </div>
+                </div>
+
+                <div class="custom-size">
+                    <label for="custom-size">Number of squares per side:</label>
+
+                    <div class="custom-size-container">
+                        <input type="text" class="custom-size" name="custom-size-input"
+                            value="enter number from 1-100" />
+                        <button>Update</button>
+                    </div>
+                </div>
+
+                <div class="mode-container">
+                    <div class="text">Mode:</div>
+
+                    <div class="modes">
+                        <button>Classic</button>
+                        <button>Modern</button>
+                        <button class="rainbow-button">Rainbow</button>
+                    </div>
+                </div>
+
+                <div class="tools">
+                    <button class="eraser">Eraser</button>
+                    <button class="clear">Clear</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid"></div>
+    </div>
 </body>
 
 </html>
