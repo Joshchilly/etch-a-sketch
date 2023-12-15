@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Lobster&family=Merriweather+Sans:wght@500&family=Nova+Square&display=swap');
 
 body {
     background-color: #78cccb;
@@ -7,7 +7,7 @@ body {
 .container {
     display: flex;
     justify-content: space-around;
-    padding-top: 40px;
+    padding-top: 33px;
     margin-inline: 20px;
 }
 
@@ -52,31 +52,39 @@ body {
 .custom-size {
     display: flex;
     flex-direction: column;
-    gap: 9px;
+    gap: 12px;
     align-items: start;
 }
 
 .custom-size-container {
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 
-input, .custom-size-container>button {
+input,
+.custom-size-container>button {
     font-size: 16px;
 }
 
 input {
+    font-family: monospace;
     color: grey;
-    width: 180px;
+    width: 203px;
+    height: 25px;
+    padding-inline: 8px;
     border-radius: 4px;
     border-width: 1px;
     border-style: solid;
     border-color: black;
+    background-color: #f9f9ef;
 }
 
 .tools {
     display: flex;
     gap: 40px;
+    margin-left: 10px;
+    margin-top: 40px;
 }
 
 .custom-size-container>button {
@@ -87,22 +95,45 @@ input {
 
 .tools>button,
 .sizes button,
-.modes button {
+.modes button,
+.custom-size-container>button {
     font-size: 16px;
     border: none;
     border-radius: 4px;
-    padding: 5px 8px 5px 8px;
+    padding: 4px 8px 0px 8px;
     background-color: #ffffea;
+}
+
+.sizes button,
+.modes button,
+.custom-size-container>button {
+    font-family: "Kalam", sans-serif;
 }
 
 .tools>button {
     width: fit-content;
     font-weight: bolder;
     color: #ff5e5b;
+    font-family: "Nova Square", sans-serif;
+    padding-bottom: 6px;
+    padding-top: 8px;
 }
 
-.rainbow-button {
+.rainbow {
     color: #21a1aa;
+}
+
+button {
+    box-shadow: 0 4px #999;
+}
+
+button:hover {
+    background-image: linear-gradient(#ffed66 0 0);
+}
+
+button:active {
+    box-shadow: 0 4px #666;
+    transform: translateY(3px);
 }
 
 .customization-container .text,
@@ -110,6 +141,7 @@ input {
     font-size: 30px;
     font-weight: bold;
     color: #ffffea;
+    font-family: "Merriweather Sans", sans-serif;
 }
 
 .grid {
@@ -117,16 +149,16 @@ input {
     flex-wrap: wrap;
     width: 650px;
     height: 650px;
-    border-radius: 5px;
-    border-width: 7px;
+    border-radius: 12px;
+    border-width: 16px;
     border-color: purple;
-    border-style: solid;
+    border-style: double;
 }
 
 .square {
     width: 40.625px;
     height: 40.625px;
-    background-color: pink;
-    border: 1px solid black;
+    background-color: #D8D8D8;
+    border: 0.5px solid rgb(142, 138, 138);
     box-sizing: border-box;
 }
