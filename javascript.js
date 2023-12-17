@@ -1,7 +1,9 @@
 const body = document.querySelector('body');
 const grid = document.querySelector('.grid');
-const eraser = document.querySelector('.eraser');
 const buttons = document.querySelectorAll('button');
+const smallButton = document.querySelector('.small');
+const mediumButton = document.querySelector('.medium');
+const bigButton = document.querySelector('.big');
 const inputBox = document.querySelector('#custom-size-input');
 const updateButton = document.querySelector('.update');
 const classicButton = document.querySelector('.classic');
@@ -86,6 +88,21 @@ buttons.forEach((button) => {
     });
 });
 
+smallButton.addEventListener('click', () => {
+    clearButton.click();
+    buildGrid(8);
+});
+
+mediumButton.addEventListener('click', () => {
+    clearButton.click();
+    buildGrid(40);
+});
+
+bigButton.addEventListener('click', () => {
+    clearButton.click();
+    buildGrid(95);
+});
+
 inputBox.addEventListener('click', (e) => {
     if (inputBoxClicked) {
         return;
@@ -144,7 +161,7 @@ rainbowButton.addEventListener('click', () => {
     classicOn = false, randomOn = false, rainbowOn = true;
 });
 
-eraser.addEventListener('click', (e) => {
+eraserButton.addEventListener('click', (e) => {
     if (eraserOn) {
         e.target.textContent = 'Eraser';
         eraserOn = false;
