@@ -156,9 +156,7 @@ button:active {
 }
 
 .square {
-    width: 40.625px;
-    height: 40.625px;
     background-color: #D8D8D8;
-    border: 0.5px solid rgb(142, 138, 138);
+    border: 0.5px solid rgb(188, 179, 179);
     box-sizing: border-box;
 }
