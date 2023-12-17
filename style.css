@@ -125,6 +125,7 @@ input {
 
 button {
     box-shadow: 0 4px #999;
+    cursor: pointer;
 }
 
 button:hover {
